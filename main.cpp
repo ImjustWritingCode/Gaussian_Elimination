@@ -1,5 +1,5 @@
 //
-//  Gaussian_Elimination(3*3)
+//  Gaussian_Elimination(4*3)
 //
 //  Created by 江承翰 on 2017/4/5.
 //  Copyright © 2017年 江承翰. All rights reserved.
@@ -24,7 +24,7 @@ int main(void) {
         for(j=0;j<4;j++)
         cin>>mat[j][i];
     }
-    for(i=2;i>0;i--)
+    for(i=2;i>0;i--)//swap to let the biggest x goes below
     {
         for(j=0;j<i;j++)
         {
@@ -35,9 +35,9 @@ int main(void) {
             }
         }
     }
-    for(i=0;i<3;i++)
+    for(i=0;i<3;i++)//do the subtraction
     {
-        for(j=0;i<3;i++)
+        for(j=0;j<3;j++)
         {
             if(i==j)
                 continue;
